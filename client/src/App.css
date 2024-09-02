@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.logo-font {
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+.google-font{
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.bg-grid{
+  background-image: radial-gradient(#474bff 0.8px, transparent 0.5px);
+background-size: 20px 20px;
+background-color: #ffffff;
+}
+.bg-black-grid{
+  background-image: radial-gradient(#474bff 0.5px, transparent 0.5px);
+background-size: 25px 25px;
+background-color: #000000;
+
+}
+
+
+.modal {
+  width: 80%; /* Adjust the width as needed */
+  height: 80%; /* Adjust the height as needed */
+  max-width: 600px; /* Optionally, set a maximum width */
+  max-height: 400px; /* Optionally, set a maximum height */
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure the modal appears above other content */
+  /* Add additional styles as needed */
+}
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #009688;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #0077ff, 0 0 10px #0077ff, 0 0 20px #0077ff, 0 0 40px #0077ff, 0 0 80px #0077ff, 0 0 90px #0077ff, 0 0 100px #0077ff, 0 0 150px #0077ff;
+  }
+  50% {
+    text-shadow: 0 0 15px #0077ff, 0 0 20px #0077ff, 0 0 30px #0077ff, 0 0 40px #0077ff, 0 0 50px #0077ff, 0 0 60px #0077ff, 0 0 70px #0077ff, 0 0 80px #0077ff;
+  }
+  100% {
+    text-shadow: 0 0 5px #0077ff, 0 0 10px #0077ff, 0 0 20px #0077ff, 0 0 40px #0077ff, 0 0 80px #0077ff, 0 0 90px #0077ff, 0 0 100px #0077ff, 0 0 150px #0077ff;
+  }
+}
+
+.glow-text-blue {
+  animation: glow 1.5s infinite alternate;
+}
+
+.neon-bg {
+  background: linear-gradient(90deg, #ff6fd8, #3813e0, #17c5ea, #14b3d1);
+  background-size: 400% 400%;
+  animation: neonAnimation 4s linear infinite;
+  color: #fff;
+}
+
+@keyframes neonAnimation {
+  0%,
+  100% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.gradient-bg {
+  background-image: linear-gradient(135deg, #2a47c7e4 0% ,rgb(111, 47, 213) 100%);
+  animation: neon-animation 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon-animation {
+  0% {
+    filter: brightness(100%);
+  }
+  100% {
+    filter: brightness(150%);
+  }
+}
+
+.modern-text {
+  background: linear-gradient(74deg, rgb(66, 133, 244) 0px, rgb(155, 114, 203) 9%, rgb(217, 101, 112) 20%, rgb(217, 101, 112) 24%, rgb(155, 114, 203) 35%, rgb(66, 133, 244) 44%, rgb(155, 114, 203) 50%, rgb(217, 101, 112) 56%);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: modernAnimation 30s ease infinite; /* Changed from 10ss to 10s */
+}
+
+@keyframes modernAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 0% 50%;
+  }
+  75% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+df-messenger {
+  z-index: 999;
+  position:absolute;
+  --df-messenger-font-color: #000000;
+  --df-messenger-font-family: Google Sans;
+  --df-messenger-chat-background: #F6ECF8;
+  --df-messenger-message-user-background: #E1BEE7;
+  --df-messenger-message-bot-background: #C6DAFC;
+  bottom: 50px;
+  right: 16px;
+}
