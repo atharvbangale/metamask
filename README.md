@@ -1,6 +1,6 @@
 # MetaVault
 
-**Visit my portfolio for more exciting projects: [Atharv's Portfolio]((https://atharvbangale.netlify.app/)/)**
+**Visit my portfolio for more exciting projects: [Atharv's Portfolio](https://atharvbangale.netlify.app/)**
 
 # MetaVault <small>[<a href="#screenshots" style="text-decoration: underline;">Jump to Screenshots</a>]</small>
 
@@ -72,7 +72,7 @@ Here are some screenshots demonstrating various features of MetaVault:
 
 ## Portfolio
 
-For more of my work, you can visit my portfolio at [Atharv's Portfolio]((https://atharvbangale.netlify.app/)/).
+For more of my work, you can visit my portfolio at [Atharv's Portfolio](https://atharvbangale.netlify.app/).
 
 ## Warning
 
